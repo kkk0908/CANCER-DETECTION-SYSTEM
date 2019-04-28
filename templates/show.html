@@ -1,0 +1,29 @@
+!DOCTYPE html>
+<html lang = "en">
+   <head></head>
+   <body>
+
+      
+      <table>
+         <thead>
+            <tr>
+               <th>empid</th>
+               <th>name</th>
+               <th>dob</th>
+               <th>dep</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for student in emp %}
+               <tr>
+                  <td>{{ emp.empid }}</td>
+                  <td>{{ emp.name }}</td>
+                  <td>{{ emp.dob }}</td>
+                  <td>{{ emp.dep }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+   </body>
+</html>

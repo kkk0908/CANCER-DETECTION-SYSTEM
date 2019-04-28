@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title> Cancer Detection System </title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+   #myCarousel{
+    margin:25px;
+   }
+   
+   h2{
+	  text-align:center;
+	  cursor:pointer;
+	  color:white;
+   }
+   .bg-primary{
+	  text-align:center;
+	  cursor:pointer;
+	  color:white;
+	  font-family:ariel;
+   }
+   
+   div.footer{
+	   position:fixed;
+	   bottom:0;
+	   left:0;
+	   width:100%;
+	   background-color:#514A4A;
+	   text-align:center;
+	   color:white;
+	   height:35px;
+	   border-top: solid 2px #eee;
+   }
+  </style>
+
+ </head>
+ <body> 
+   <div class="bg-primary"> <blockquote style="font-size:33px" > <font size="12">C</font>ANCER <font size="12">D</font>ETECTION <font size="12">S</font>YSTEM <sub style="font-size:18px"> <i>USING MACHINE LEARNING</i> </sub> </blockquote>	</div> 
+  
+  <div class="w3-container" style="color:red">
+  <form>
+   <div class="form-group row">
+    <div class="col-xs-6">
+     <input type="text" class="form-control" placeholder=" Gene..." name="gene" required autofocus hidden />
+    </div>
+    <div class="col-xs-2">
+     <input type="text" class="form-control" placeholder=" Gene..." name="gene" required autofocus />
+    </div>
+    <div class="col-xs-2">
+     <input type="password" class="form-control" placeholder=" Varience..." name="varience" required autofocus />
+    </div>
+	<div class="col-xs-2">
+     <input type="submit" class="w3-btn w3-green w3-small w3-round-large" style="width:50%" value="Predict" />
+    </div>
+   </div>
+  </form>  
+  </div>
+ 
+  <div class="w3-container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="center-block" src="img3.jpg" alt="ML" style="width:70%" >
+	  <div class="carousel-caption">
+          <h3>ML</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img class="center-block" src="img2.jpg" alt="ML" style="width:70%" >
+	  <div class="carousel-caption">
+          <h3>ML</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img class="center-block" src="img4.jpg" alt="ML" style="width:70%" >
+	  <div class="carousel-caption">
+          <h3>ML</h3>
+      </div>
+    </div>
+	<div class="item">
+      <img class="center-block" src="img1.jpg" alt="ML" style="width:70%" >
+	  <div class="carousel-caption">
+          <h3>ML</h3>
+      </div>
+    </div>
+	<div class="item">
+      <img class="center-block" src="img5.jpg" alt="ML" style="width:70%" >
+	  <div class="carousel-caption">
+          <h3>ML</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+  </div>
+  <br>
+  <div class="footer">
+   <p> Copyright 2018 &copy; PROVIGENCE  | All rights reserved |</p>
+  </div>
+  
+ </body>
+</html>

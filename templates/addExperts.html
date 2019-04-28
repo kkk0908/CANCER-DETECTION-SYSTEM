@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <h3>Signup</h3>
+      <hr/>
+      
+      {%- for category, message in get_flashed_messages(with_categories = true) %}
+         <div class = "alert alert-danger">
+            {{ message }}
+         </div>
+      {%- endfor %}
+      
+      <form action = "{{ url_for('addExperts') }}" method = "post" >
+         <label for = "name">Name</label><br>
+         <input type = "text" name = "name" placeholder = "Name" /><br>
+         <label for = "email">email</label><br>
+         <input type = "email" name = "email" placeholder = "Email" required /><br>
+         <label for = "pass">Password</label><br>
+         <input type = "password" name = "password" placeholder = "Password" /><br>
+         <label for = "dept">Department</label><br>
+         <input type = "text" name = "dept" placeholder = "Department" /><br>
+         <label for = "hosptl">Hospital</label><br>
+         <input type = "text" name = "hosptl" placeholder = "Hospital" /><br><br>         
+         <input type = "submit" value = "Signup" />
+      </form>
+   </body>
+</html>

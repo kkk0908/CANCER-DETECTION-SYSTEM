@@ -1,0 +1,119 @@
+<html>
+ <head>
+ <title> Student Registration Form </title>
+  <link rel="stylesheet" type="text/css" href="lib.css" >
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+
+  input[type="number"]{width:225px;}
+     div.footer{
+     position:fixed;
+     bottom:0;
+     left:0;
+     width:100%;
+     background-color:#514A4A;
+     text-align:center;
+     color:white;
+     height:35px;
+     border-top: solid 2px #eee;
+   }
+  .c1{
+    font-family:Kenia;
+    color:red;
+    text-shadow:5px 0px 2px black;
+    text-align:center;
+    text-decoration:underline;
+  }
+  
+  .c2{
+    font-family:Kenia;
+    color:lightblue;
+    text-shadow:4px 0px 2px black;
+    text-align:center;
+    text-decoration:underline;
+  }
+  
+  input{
+    padding:8px 12px;
+    border:3px solid blue;
+    border-left-width:20px;
+    border-right-width:20px;
+    border-radius:7px;
+  }
+    
+  input:hover{
+    font-weight:bold;
+    color:black;
+    font-size:15;
+  }
+  
+  input[type=submit]{
+    padding:8px 12px;
+    width:100%;
+    background-color:#4CAF50;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor:pointer;
+  }
+  
+  input[type=submit]:hover{
+    background-color:red;
+  }
+  
+  a.adm_menu{
+    font-size:18;
+    font-weight:bold;
+    color:black;
+    text-decoration:none; 
+  }
+  
+  a.adm_menu:hover{
+    color:white;
+    font-size:22px;
+  }
+  
+  .thumbnail:hover{
+    
+  }
+  
+  a.rem_pass:hover{
+    font-size:20;
+    font-weight:bold;
+  }
+     .bg-primary{
+    text-align:center;
+    cursor:pointer;
+    color:white;
+    font-family:ariel;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="bg-primary" > 
+    <blockquote style="font-size:33px" > 
+      <font size="12">C</font>ANCER <font size="12">D</font>ETECTION <font size="12">S</font>YSTEM <sub style="font-size:18px"> <i>Using Machine Learning</i> </sub> 
+    </blockquote> 
+  </div>  
+ <h2 align="center"> Expert Sign up </h2><br>
+  <form action = "{{ url_for('registration') }}" method = "post">
+   <input type="text" placeholder=" First Name" size="30" name="fname" required /><br><br>
+   <input type="text" placeholder=" Last Name" size="30" name="lastname"/><br> <br>
+   <input type="text" placeholder=" Department " size="30" name="dept"/ required><br> <br>
+   <input type="text" placeholder=" Hospital Name " size="30" name="hosptl"/ required><br> <br>
+   <input type="email" placeholder=" Email" size="30" name="email" required /><br><br>
+   <input type="password" placeholder=" Password" size="30" name="password" required /><br><br>
+   <input style="width:305px;" type="submit" value="Register" >
+  </form>
+  <hr color="green" align="center" width="400px">
+      <div class="footer">
+      <p> Copyright 2018 &copy; PROVIGENCE  | All rights reserved |</p>
+    </div>
+ </body>
+</html>

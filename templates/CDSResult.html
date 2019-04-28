@@ -1,0 +1,70 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+<head>
+ <title> Cancer Detection System </title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+     .bg-primary{
+	  text-align:center;
+	  cursor:pointer;
+	  color:white;
+	  font-family:ariel;
+   }
+   
+   div.footer{
+	   position:fixed;
+	   bottom:0;
+	   left:0;
+	   width:100%;
+	   background-color:#514A4A;
+	   text-align:center;
+	   color:white;
+	   height:35px;
+	   border-top: solid 2px #eee;
+   }
+
+  </style>
+</head>
+<body>
+<div class="container">
+	<div class="bg-primary" > 
+		<blockquote style="font-size:33px" > 
+			<font size="12">C</font>ANCER <font size="12">D</font>ETECTION <font size="12">S</font>YSTEM <sub style="font-size:18px"> <i>Using Machine Learning</i> </sub> 
+		</blockquote> 
+	</div>
+	<!--<div class="jumbotron" style="background-color: blue">
+     <h2>Cancer Detection </h2>
+     <p>Using Machine Learning</p> 
+	</div>-->
+</div>
+<div>
+	{% if prediction==1 %}
+	<h1>1 With probablity: {{ prob }}</h1>
+	{% elif prediction==2 %}
+	<h1>2 With probablity: {{ prob }}</h1>
+	{% elif prediction==3 %}
+	<h1>3 With probablity: {{ prob }}</h1>
+	{% elif prediction==4 %}
+	<h1>4 With probablity: {{ prob }}</h1>
+	{% elif prediction==5 %}
+	<h1>5 With probablity: {{ prob }}</h1>
+	{% elif prediction==6 %}
+	<h1>6 With probablity: {{ prob }}</h1>
+	{% elif prediction==7 %}
+	<h1>7 With probablity: {{ prob }}</h1>
+	{% elif prediction==8 %}
+	<h1>8 With probablity: {{ prob }}</h1>
+	{% endif %}
+	
+</div>
+    <div class="footer">
+    	<p> Copyright 2018 &copy; PROVIGENCE  | All rights reserved |</p>
+    </div>
+</body>    
+{% endblock %}
